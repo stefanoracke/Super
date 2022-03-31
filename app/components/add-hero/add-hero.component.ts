@@ -39,6 +39,9 @@ export class AddHeroComponent implements OnInit {
   addtoTheTeam(id:number){
     this.theTeam.push(this.getHeros[id]);
     localStorage.setItem("theteam",JSON.stringify(this.theTeam))
+    let buttons = document.querySelectorAll('button')
+    buttons[id].textContent = "Added to Team"
+    buttons[id].style.background = "green"
   }
 
   getForm(form:SearchI){
