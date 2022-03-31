@@ -7,10 +7,11 @@
 
 .title{
     text-decoration: none;
-    color: black;
+    color: #0c8c4c;
+    text-shadow: 1px 1px 2px black;
     font-family: 'Oswald', sans-serif;
     text-align: justify;
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     
     font-weight: 900;
     margin-left: 20px;

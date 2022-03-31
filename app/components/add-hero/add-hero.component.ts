@@ -11,7 +11,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class AddHeroComponent implements OnInit {
   public getHeros:Array<HeroI> = [];
-  
+  theTeam:HeroI[] = [];
 
   form = new FormGroup({
     value : new FormControl ('', Validators.required)
@@ -22,13 +22,23 @@ export class AddHeroComponent implements OnInit {
   ngOnInit(): void {
     this.getToken();
     this.getResults();
-    console.log(this.getHeros)
+    this.getTheTeam();
+
   }
 
   getToken(){
     if(localStorage.getItem("token")== null){
       this.router.navigate(["login"])
     }
+  }
+
+  getTheTeam(){
+    this.theTeam = JSON.parse(localStorage.getItem("theteam")|| "{}")
+  }
+
+  addtoTheTeam(id:number){
+    this.theTeam.push(this.getHeros[id]);
+    localStorage.setItem("theteam",JSON.stringify(this.theTeam))
   }
 
   getForm(form:SearchI){

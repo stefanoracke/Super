@@ -1,9 +1,15 @@
 footer{
     height: 10vh;
-    background-color: rgb(136, 145, 141);
+    background-color: rgb(34, 37, 36);
     font-size: 1.2rem;
     position: absolute;
-
+    color: #ffffff;
+    font-weight: 400;
+    
     bottom: 0;
     width: 100%;
+}
+
+p{
+    margin-left: 3%;
 }

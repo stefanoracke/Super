@@ -30,7 +30,19 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getToken();
+    this.getSixHeroes();
+    console.log(this.theTeam.length)
     
+    this.getTheTeam2();
+    this.getTheTeam();
+    console.log(this.theTeam.length)
+    
+  }
+  getTheTeam2(){
+    this.theTeam = JSON.parse(localStorage.getItem("theteam")|| "{}")
+  }
+
+  getSixHeroes(){
     this.api.getAllHeroes(226).subscribe(data=>{
       this.hero1 = data;
       localStorage.setItem("hero1",JSON.stringify(data))
@@ -57,23 +69,23 @@ export class HomeComponent implements OnInit {
       localStorage.setItem("hero6",JSON.stringify(data))
       
     })
-    
-    this.getTheTeam();
-    console.log(this.theTeam[0])
   }
 
   getTheTeam(){
     let heros1 = JSON.parse(localStorage.getItem("hero1") || '{}');
-    let heros2 = JSON.parse(localStorage.getItem("hero2") || '{}');
-    let heros3 = JSON.parse(localStorage.getItem("hero3") || '{}');
-    let heros4 = JSON.parse(localStorage.getItem("hero4") || '{}');
-    let heros5 = JSON.parse(localStorage.getItem("hero5") || '{}');
-    let heros6 = JSON.parse(localStorage.getItem("hero6") || '{}');
+      let heros2 = JSON.parse(localStorage.getItem("hero2") || '{}');
+      let heros3 = JSON.parse(localStorage.getItem("hero3") || '{}');
+      let heros4 = JSON.parse(localStorage.getItem("hero4") || '{}');
+      let heros5 = JSON.parse(localStorage.getItem("hero5") || '{}');
+      let heros6 = JSON.parse(localStorage.getItem("hero6") || '{}');
 
-    this.theTeam = [heros1,heros2,heros3,heros4,heros5,heros6]
+    if(this.theTeam.length == undefined ){     
+      console.log("hello");
+    this.theTeam = [heros1,heros2,heros3,heros4,heros5,heros6];
 
-    localStorage.setItem("theteam",JSON.stringify(this.theTeam))
-    console.log(this.theTeam);
+    localStorage.setItem("theteam",JSON.stringify(this.theTeam));
+    } 
+    
 
   }
 
@@ -93,4 +105,6 @@ export class HomeComponent implements OnInit {
       this.router.navigate(["login"])
     }
   }
+
+  
 }
