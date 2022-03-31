@@ -9,4 +9,10 @@
 .info li{
     padding: 20px;
     list-style: none;
+    font-size: 1.2rem;
+}
+
+.img{
+    max-height: 450px;
+    width: auto;
 }

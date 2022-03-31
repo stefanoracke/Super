@@ -11,14 +11,15 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="" alt="aqui">
+                    <img class="img" src="{{hero.image.url}}" alt="aqui">
                 </div>
                 <div class="col" >
-                    <h2>Name: </h2>
+                    <h2>Name: {{hero.name}} </h2>
                     <ul class="info">
-                        <li>Height: </li>
-                        <li>Weight: </li>
-                        <li>Work: </li>
+                        <li>Height: {{hero.appearance.height}} </li>
+                        <li>Weight: {{hero.appearance.weight}} </li>
+                        <li>Work: {{hero.work.occupation }} </li>
+                        <li>Aliases: {{hero.biography.aliases }} </li>
                     </ul>
                 </div>
             </div>

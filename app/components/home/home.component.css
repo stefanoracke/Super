@@ -13,6 +13,9 @@
 }
 .title{
   margin-left: 43%;
+  padding-bottom: 0.2vh;
+  font-size: 3rem;
+  padding-top: 5vh;
 }
 
 .hero-img{

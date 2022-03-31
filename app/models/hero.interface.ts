@@ -11,11 +11,12 @@ export interface HeroI{
         combat: string;
     };
     biography:{
+        
         aliases: any;
     }
     appearance:{
-        height: any;
-        weight: any;
+        height: Array<string>;
+        weight: Array<string>;
         eye_color: string;
         hair_color: string;
     }
