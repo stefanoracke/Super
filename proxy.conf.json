@@ -1,8 +1,0 @@
-{
-    "/api.php/*":{
-        "target": "https://superheroapi.com/",
-        "secure": false,
-        "logLevel":"debug",
-        "changeOrigin":true
-    }
-}
