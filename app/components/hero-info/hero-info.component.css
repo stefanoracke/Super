@@ -6,6 +6,11 @@
     padding: 30px;
 }
 
+h2{
+    margin-left: 7%;
+    font-weight: 600;
+}
+
 .info li{
     padding: 20px;
     list-style: none;

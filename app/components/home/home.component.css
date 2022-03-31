@@ -31,6 +31,10 @@
     margin-left: 8%;
 }
 
+h4{
+  font-weight: 600;
+}
+
 .img-container {
     position: relative;
     overflow: hidden;
@@ -42,10 +46,15 @@
     background-color: var(--primaryColor);
     margin-bottom: 20px;
     transition: 2s ease;
+    
+    
 }
 
 .img-container:hover{
-  background-color: rgb(172, 90, 90);
+  border: 1rem solid #191414;
+  padding: 10px;
+  background-color: #191414;
+  color: #fff;
 }
 
 /*PowerStats*/
@@ -66,7 +75,7 @@
   position: relative;
   width: 175px;
   height: 8px;
-  background-color: #888;
+  background-color: rgb(226, 219, 219);
   border-radius: 5px;
   position: inline;
   overflow: hidden;
@@ -76,7 +85,7 @@
   content: "";
   position: absolute;
   left: -175px;
-  background-color: rgb(57, 46, 211);
+  background-color: #1ED760;
   transition: 1s ease all;
   animation: skill_bar-fill 2s ease-in-out forwards;
 }

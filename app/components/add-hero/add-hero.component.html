@@ -17,8 +17,8 @@
                 
                 <div class="form">
                     <form [formGroup]="form" (ngSubmit)="getForm(form.value)" >
-                        <input class="Search" type="text" placeholder="Search" name="name" formControlName="value">
-                        <input class="submit" type="submit" >
+                        <input class="Search" type="text" placeholder="Hero" name="name" formControlName="value">
+                        <input class="submit" type="submit" value="Search">
                     </form>
                 </div>
                 
@@ -32,6 +32,7 @@
                 <div class="img-container">
                     <img class="img" src={{hero.image.url}} alt="">
                     <h5>{{hero.name}}</h5>
+                    <button class="add">Add to Team</button>
                 </div>
               </div>
                   
