@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <app-navbar></app-navbar>
+    <h1 class="title">Team Stats</h1>
+    <div class="wrapper">
+        <div class="card" *ngFor="let stat of average">
+            <div class="circle">
+                <div class="bar"></div>
+                    <div class="box">
+                        <span>{{stat.value}}%</span>
+                    </div>
+                </div>
+                <div class="text">{{stat.name}}</div>
+            
+        </div>
+        
+
+    </div>
+      
+    
+
+    <app-footer></app-footer>
+</body>
+</html>

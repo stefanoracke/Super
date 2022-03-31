@@ -1,0 +1,52 @@
+.Search{
+    width: 250px;
+    height: 50px;
+}
+
+.submit{
+    width: 80px;
+    height: 50px;
+    background-color: #0e0d0d;
+    text-align: center;
+    transition: 1s ease;
+    color: white;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    background-color: #0e0d0dbd;
+    
+}
+.form{
+    padding-left: 30%;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid #fff;
+    box-shadow: 0.05rem 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.342);
+    width: fit-content;
+    
+    justify-content: center;
+    background-color: var(--primaryColor);
+    margin-bottom: 20px;
+}
+.container{
+    padding-top: 20px;
+}
+
+.img{
+    max-width: auto;
+    max-height: 300px;
+}
+
+.col{
+    padding-top: 30px;
+}
+
+@media(max-width:700px){
+    .col{
+        margin-left: 28%;
+    }
+}

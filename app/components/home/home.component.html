@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The six</title>
+</head>
+<body class="body">
+    <app-navbar></app-navbar>
+    <h1 class="title"> The Great Team </h1>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col" id="col1" *ngFor="let hero of theTeam; let i = index">
+                <div (click)="routerInfo(i)" class="img-container">                    
+                    <img class="hero-img" src={{hero.image.url}} alt="wolverine">
+                    <ul class="power-stats">
+                        <li> <h4>{{hero.name}}</h4> </li>
+                        <li><div class="skill_item">
+                            <p class="skill_tech">INT:{{hero.powerstats.intelligence}}</p>
+                            <div class="skill_bar skill_bar--{{hero.powerstats.intelligence}}"></div>
+                        </div></li>
+                        <li><div class="skill_item">
+                            <p class="skill_tech">STR:{{hero.powerstats.strength}}</p>
+                            <div class="skill_bar skill_bar--{{hero.powerstats.strength}}"></div>
+                        </div></li>
+                        <li><div class="skill_item">
+                            <p class="skill_tech">SPD:{{hero.powerstats.speed}}</p>
+                            <div class="skill_bar skill_bar--{{hero.powerstats.speed}}"></div>
+                        </div></li>
+                        <li><div class="skill_item">
+                            <p class="skill_tech">DUR:{{hero.powerstats.durability}}</p>
+                            <div class="skill_bar skill_bar--{{hero.powerstats.durability}}"></div>
+                        </div></li>
+                        <li><div class="skill_item">
+                            <p class="skill_tech">PWR:{{hero.powerstats.power}}</p>
+                            <div class="skill_bar skill_bar--{{hero.powerstats.power}}"></div>
+                        </div></li>
+                        <li><div class="skill_item">
+                            <p class="skill_tech">CBT:{{hero.powerstats.combat}}</p>
+                            <div class="skill_bar skill_bar--{{hero.powerstats.combat}}"></div>
+                        </div></li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</body>
+</html>

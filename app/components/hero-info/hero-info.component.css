@@ -1,0 +1,12 @@
+.row{
+    margin-top: 7vh;
+}
+
+.info{
+    padding: 30px;
+}
+
+.info li{
+    padding: 20px;
+    list-style: none;
+}

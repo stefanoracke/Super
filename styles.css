@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+
+.body{
+    margin: 0%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    
+    position: relative;
+    background: rgb(236, 236, 236);
+    min-height: 100vh;
+    padding-bottom: 15vh;
+}
+
+/*SKILL BAR 1-100*/
+.skill_bar--1::after { --skills-bar-length:1% ;}
+.skill_bar--2::after { --skills-bar-length:2% ;}
+.skill_bar--3::after { --skills-bar-length:3% ;}
+.skill_bar--4::after { --skills-bar-length:4% ;}
+.skill_bar--5::after { --skills-bar-length:5% ;}
+.skill_bar--6::after { --skills-bar-length:6% ;}
+.skill_bar--7::after { --skills-bar-length:7% ;}
+.skill_bar--8::after { --skills-bar-length:8% ;}
+.skill_bar--9::after { --skills-bar-length:9% ;}
+.skill_bar--10::after { --skills-bar-length:10% ;}
+.skill_bar--11::after { --skills-bar-length:11% ;}
+.skill_bar--12::after { --skills-bar-length:12% ;}
+.skill_bar--13::after { --skills-bar-length:13% ;}
+.skill_bar--14::after { --skills-bar-length:14% ;}
+.skill_bar--15::after { --skills-bar-length:15% ;}
+.skill_bar--16::after { --skills-bar-length:16% ;}
+.skill_bar--17::after { --skills-bar-length:17% ;}
+.skill_bar--18::after { --skills-bar-length:18% ;}
+.skill_bar--19::after { --skills-bar-length:19% ;}
+.skill_bar--20::after { --skills-bar-length:20% ;}
+.skill_bar--21::after { --skills-bar-length:21% ;}
+.skill_bar--22::after { --skills-bar-length:22% ;}
+.skill_bar--23::after { --skills-bar-length:23% ;}
+.skill_bar--24::after { --skills-bar-length:24% ;}
+.skill_bar--25::after { --skills-bar-length:25% ;}
+.skill_bar--26::after { --skills-bar-length:26% ;}
+.skill_bar--27::after { --skills-bar-length:27% ;}
+.skill_bar--28::after { --skills-bar-length:28% ;}
+.skill_bar--29::after { --skills-bar-length:29% ;}
+.skill_bar--30::after { --skills-bar-length:30% ;}
+.skill_bar--31::after { --skills-bar-length:31% ;}
+.skill_bar--32::after { --skills-bar-length:32% ;}
+.skill_bar--33::after { --skills-bar-length:33% ;}
+.skill_bar--34::after { --skills-bar-length:34% ;}
+.skill_bar--35::after { --skills-bar-length:35% ;}
+.skill_bar--36::after { --skills-bar-length:36% ;}
+.skill_bar--37::after { --skills-bar-length:37% ;}
+.skill_bar--38::after { --skills-bar-length:38% ;}
+.skill_bar--39::after { --skills-bar-length:39% ;}
+.skill_bar--40::after { --skills-bar-length:40% ;}
+.skill_bar--41::after { --skills-bar-length:41% ;}
+.skill_bar--42::after { --skills-bar-length:42% ;}
+.skill_bar--43::after { --skills-bar-length:43% ;}
+.skill_bar--44::after { --skills-bar-length:44% ;}
+.skill_bar--45::after { --skills-bar-length:45% ;}
+.skill_bar--46::after { --skills-bar-length:46% ;}
+.skill_bar--47::after { --skills-bar-length:47% ;}
+.skill_bar--48::after { --skills-bar-length:48% ;}
+.skill_bar--49::after { --skills-bar-length:49% ;}
+.skill_bar--50::after { --skills-bar-length:50% ;}
+.skill_bar--51::after { --skills-bar-length:51% ;}
+.skill_bar--52::after { --skills-bar-length:52% ;}
+.skill_bar--53::after { --skills-bar-length:53% ;}
+.skill_bar--54::after { --skills-bar-length:54% ;}
+.skill_bar--55::after { --skills-bar-length:55% ;}
+.skill_bar--56::after { --skills-bar-length:56% ;}
+.skill_bar--57::after { --skills-bar-length:57% ;}
+.skill_bar--58::after { --skills-bar-length:58% ;}
+.skill_bar--59::after { --skills-bar-length:59% ;}
+.skill_bar--60::after { --skills-bar-length:60% ;}
+.skill_bar--61::after { --skills-bar-length:61% ;}
+.skill_bar--62::after { --skills-bar-length:62% ;}
+.skill_bar--63::after { --skills-bar-length:63% ;}
+.skill_bar--64::after { --skills-bar-length:64% ;}
+.skill_bar--65::after { --skills-bar-length:65% ;}
+.skill_bar--66::after { --skills-bar-length:66% ;}
+.skill_bar--67::after { --skills-bar-length:67% ;}
+.skill_bar--68::after { --skills-bar-length:68% ;}
+.skill_bar--69::after { --skills-bar-length:69% ;}
+.skill_bar--70::after { --skills-bar-length:70% ;}
+.skill_bar--71::after { --skills-bar-length:71% ;}
+.skill_bar--72::after { --skills-bar-length:72% ;}
+.skill_bar--73::after { --skills-bar-length:73% ;}
+.skill_bar--74::after { --skills-bar-length:74% ;}
+.skill_bar--75::after { --skills-bar-length:75% ;}
+.skill_bar--76::after { --skills-bar-length:76% ;}
+.skill_bar--77::after { --skills-bar-length:77% ;}
+.skill_bar--78::after { --skills-bar-length:78% ;}
+.skill_bar--79::after { --skills-bar-length:79% ;}
+.skill_bar--80::after { --skills-bar-length:80% ;}
+.skill_bar--81::after { --skills-bar-length:81% ;}
+.skill_bar--82::after { --skills-bar-length:82% ;}
+.skill_bar--83::after { --skills-bar-length:83% ;}
+.skill_bar--84::after { --skills-bar-length:84% ;}
+.skill_bar--85::after { --skills-bar-length:85% ;}
+.skill_bar--86::after { --skills-bar-length:86% ;}
+.skill_bar--87::after { --skills-bar-length:87% ;}
+.skill_bar--88::after { --skills-bar-length:88% ;}
+.skill_bar--89::after { --skills-bar-length:89% ;}
+.skill_bar--90::after { --skills-bar-length:90% ;}
+.skill_bar--91::after { --skills-bar-length:91% ;}
+.skill_bar--92::after { --skills-bar-length:92% ;}
+.skill_bar--93::after { --skills-bar-length:93% ;}
+.skill_bar--94::after { --skills-bar-length:94% ;}
+.skill_bar--95::after { --skills-bar-length:95% ;}
+.skill_bar--96::after { --skills-bar-length:96% ;}
+.skill_bar--97::after { --skills-bar-length:97% ;}
+.skill_bar--98::after { --skills-bar-length:98% ;}
+.skill_bar--99::after { --skills-bar-length:99% ;}
+.skill_bar--100::after { --skills-bar-length:100% ;}
